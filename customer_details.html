@@ -1,0 +1,118 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Restuarant App</title>
+  <meta name="description" content="">
+  <meta name="author" content="ipad-app">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+  <!--[if lte IE 9]>
+  <link rel="stylesheet" href="css/ie.css">
+  <![endif]-->
+
+  <script src="js/libs/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+ </head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+  <div class="main-content clearfix">
+    <div class="content-inner">
+      <h3 class="title-left">HELP US KNOW YOU BETTER</h3>
+      <div class="category-container">
+        <p>Share your preferences so we can offer you exactly what you like</p>
+        <div class="form-container">
+          <form id="form-customer-details"action="" class="form form-horizontal form-customerdetails">
+            <div class="control-group select-group">
+              <label class="control-label" for="you-like">You like</label>
+              <div class="controls controls-veg">
+                <label for="veg">
+                  <input type="radio" id="veg" name="food-veg" value="0">
+                  Vegeterian Food
+                </label>
+                <label for="non-veg">
+                  <input type="radio" id="non-veg" name="food-veg" value="1">
+                  Non Vegeterian Food
+                </label>
+              </div>
+            </div>
+
+            <div class="control-group select-group">
+              <label class="control-label" for="you-like">You </label>
+              <div class="controls controls-alcohol">
+                <label for="alcohol">
+                  <input type="radio" id="alcohol" name="drink-alcohol" value="1">
+                  Love Alcohol
+                </label>
+                <label for="no-alcohol">
+                  <input type="radio" id="no-alcohol" name="drink-alcohol" value="0">
+                  have no Love Alcohol
+                </label>
+              </div>
+            </div>
+
+            <div class="control-group select-group">
+              <label class="control-label" for="you-like">You love</label>
+              <div class="controls controls-spicy">
+                <label for="spicy-food">
+                  <input type="radio" id="spicy-food" name="spicy-food" value="1">
+                  spicy, steamy food
+                </label>
+                <label for="less-spicy-food">
+                  <input type="radio" id="less-spicy-food" name="spicy-food" value="0">
+                  less spicy food
+                </label>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="customer-name">Name</label>
+              <div class="controls">
+                <input type="text" id="customer-name" name="name" class="required">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="customer-email">Email</label>
+              <div class="controls">
+                <input type="text" id="customer-email" name="email" class="required email">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="customer-mobile">Mobile</label>
+              <div class="controls">
+                <input type="text" id="customer-mobile" name="mobile" class="required">
+              </div>
+          </div>
+          <div class="btn-group pull-right">
+            <a href="#" onclick="getCustomerPref();" class="btn-red">Remind me later</a>
+            <a href="javascript:void(0);" onclick="getCustomerPref();" class="btn-redWine">Continue</a>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div> <!-- #main-container -->
+
+<script src="js/libs/jquery-1.10.1.min.js"></script>
+
+<script src="js/libs/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="js/libs/jquery.lettering-0.6.1.min.js"></script>
+<script src="js/libs/jquery.retina.min.js"></script>
+<script src="js/libs/jquery.validate.min.js"></script>
+
+<script src="js/script.js"></script>
+<script type="text/javascript" src="js/datastorage.js"></script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Restaurant app</title>
+  <meta name="description" content="">
+  <meta name="author" content="ipad-app">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+  <!-- Set Apple icons for when prototype is saved to home screen -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="touch-icons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="touch-icons/apple-touch-icon-57x57.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/basic.css">
+	<link rel="stylesheet" href="css/toastmessage.min.css">
+  <!--[if lte IE 9]>
+  <link rel="stylesheet" href="css/ie.css">
+  <![endif]-->
+  <script src="js/libs/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+ </head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+  <div class="main-content clearfix">
+     <div class="content-inner">
+       <h3 class="title-left">Guest Details</h3>
+       <div class="form-container">
+         <form id="form-table-details" action="" class="form form-horizontal form-tabledetails">
+           <div class="control-group">
+             <label class="control-label" for="table-num"><img src="img/table.png" alt="table"></label>
+             <div class="controls">
+              <select  data-placeholder="Choose a table..." id="table-num" name="table" data-bind="options: table,optionsCaption:'Choose a table...',optionsText:'name',optionsValue: 'value'"></select>
+               <input type="text" id = "txt-table-num" placeholder="Or Enter Table No" name="table" />            
+			</div>
+           </div>
+
+           <div class="control-group">
+             <label class="control-label" for="server-num"><img src="img/waiter.png" alt="waiter"></label>
+             <div class="controls">
+              <select data-placeholder="Choose a server..." id="server-num" name="server" data-bind="options: server,optionsCaption:'Choose a server...',optionsText:'name',optionsValue: 'value'"></select>
+             </div>
+           </div>
+
+           <div class="control-group">
+             <label class="control-label" for="pax"><img src="img/guest.png" alt="guest"></label>
+             <div class="controls">
+               <select id="pax" name="px" class="required">
+			   <option value="1">1</option>
+			   <option value="2">2</option>
+			   <option value="3">3</option>
+			   <option value="4">4</option>
+			   <option value="5">5</option>
+			   <option value="6">6</option>
+			   <option value="7">7</option>
+			   <option value="8">8</option>
+			   <option value="9">9</option>
+			   <option value="10">10</option>
+			    <option value="11">11</option>
+			   <option value="12">12</option>
+			   <option value="13">13</option>
+			   <option value="14">14</option>
+			   <option value="15">15</option>
+			   <option value="16">16</option>
+			   <option value="17">17</option>
+			   <option value="18">18</option>
+			   <option value="19">19</option>
+			   <option value="20">20</option>
+			   </select>
+             </div>
+           </div>
+
+           <div class="control-group">
+             <label class="control-label" for="menu-item"><img src="img/menu.png" alt=""></label>
+             <div class="controls">
+             <select id="menu-item" name="menu-item" data-bind="options: menu,optionsCaption:'Choose a menu...',optionsText:'name',optionsValue: 'value'">
+              </select>
+             </div>
+           </div>
+		   
+		      <div class="control-group">
+             <label class="control-label" for="menu-item"><img src="img/menu.png" alt=""></label>
+             <div class="controls">
+             <select id="menu-type" name="menu-type">
+			 <option value="New">New Order</option>
+			 <option value="Repeat">Repeat Order</option>
+              </select>
+			 
+         <!-- <div id="relBtn" style="display:none" >
+               <a href="inapp://capture" class="btn-red">Release</a>
+               
+             </div> -->
+   
+             </div>
+           </div> 
+		   
+		   <div class="control-group" style="width:100%;margin-top:10%">
+             <div class="controls" style="width:100%;">
+					 <a href="#" style="margin-right:4%;" onclick="javascript:if(validRepeat()) { showComOrder(); }"><img src="img/complete.png" /></a> 
+			  <a href="#" style="margin-right:4%;" onclick="javascript:if(validRepeat()) { showPrvOrder(); }"><img src="img/last.png" /></a>
+			  <input type="submit" style="margin-right:4%;border-radius:0;width:148px; height:37px; background: url('img/release.png')" value ="" onclick="javascript:return releaseTable();" />
+               <a href="#"  onclick="javascript:if(valid()){saveGestDetails();}"><img src="img/continue.png" /></a>
+			  </div>
+           </div>
+         </form>
+       </div>
+     </div>
+
+  </div> <!-- #main-container -->
+  	<div id="basic-modal-content">
+				
+		</div>
+<input type="hidden" id="hdnRepeat" data-table="" data-server="" data-pax="" data-type="" data-repeat="" data-date="" data-time="" />
+<script src="js/libs/jquery-1.10.1.min.js"></script>
+<script src="js/libs/jquery.retina.min.js"></script>
+<script src="js/libs/knockout-2.2.1.js"></script>
+<script src="js/table_details.json"></script>
+<script type="text/javascript" src="js/datastorage.js"></script>
+<script type="text/javascript" src="js/libs/jquery.simplemodal.js"></script>
+<script type="text/javascript" src="js/toastmessage.min.js"></script>
+<script>
+  function TableViewModel() {
+    this.table = table;
+  }
+  ko.applyBindings(new TableViewModel());
+
+  function ServerViewModel() {
+    this.server = server;
+  }
+  ko.applyBindings(new ServerViewModel());
+
+
+ function MenuViewModel() {
+    this.menu = menu;
+  }
+  ko.applyBindings(new MenuViewModel());
+
+  $(document).ready(function(){
+	
+	   $('#menu-type').change(function(){
+       if(validTable()){	   
+			var date = new Date();
+			var month = date.getMonth() + 1;
+			var currentdate = date.getDate()+"/"+month+"/"+date.getFullYear();
+			var time = date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
+			var myOrder= new Array();
+			myOrder['date'] = currentdate;
+			myOrder['time'] = time;
+
+			if ($('#table-num option:selected').val() != "")
+				myOrder['table'] = $("#table-num").val();
+			else
+				myOrder['table'] = $("#txt-table-num").val();
+
+			myOrder['waiter'] = $("#server-num").val();
+			myOrder['pax'] = $("#pax").val();
+			myOrder['menu'] = $("#menu-item").val();
+			myOrder['ordertype'] = $("#menu-type").val();
+			myOrder['pref'] = new Array();
+			myOrder['cart'] = new Array();
+			myOrder = $.extend({},myOrder);
+			storage("order",JSON.stringify(myOrder));
+			storage("close","no");
+			location.reload();
+		}
+		else
+		   $('#menu-type').val("New");
+		   storage("close","no");  
+	   });
+	 
+	if(getCookie('order') != ""){
+	 	
+	  var myorder = jQuery.parseJSON(getCookie('order'));
+	  var exist = $('#table-num option[value="'+myorder.table+'"]').length;  // this code searches value in select options
+	  if(exist == 0)
+	  {
+	     $('#txt-table-num').show();
+		 $('#txt-table-num').val(myorder.table);
+	  }
+	  else
+	  {
+		$('#txt-table-num').hide();
+		$("#table-num").val(myorder.table);
+	  }
+	    
+		   $("#server-num").val(myorder.waiter);
+		   $("#pax").val(myorder.pax);
+		   $("#menu-item").val(myorder.menu);
+		   $("#menu-type").val(myorder.ordertype);
+		   
+			if ($('#table-num option:selected').val() != "")
+			{
+				$('#hdnRepeat').attr('data-table',$("#table-num").val());
+				
+			}
+			else
+			{
+				$('#hdnRepeat').attr('data-table',$("#txt-table-num").val());
+			}
+			$('#hdnRepeat').attr('data-server',$("#server-num").val());
+			$('#hdnRepeat').attr('data-repeat',$("#menu-type").val());
+			$('#hdnRepeat').attr('data-date',myorder.date);
+			$('#hdnRepeat').attr('data-time',myorder.time);
+			//alert(document.getElementById("hdnRepeat").getAttribute("data-table"));
+	 }
+    
+	  $('#table-num').change(function(){
+			$('#menu-type').val("New");
+			storage("close","no");
+			sessionStorage.comOrder = "";
+			if ($('#table-num option:selected').val() != ""){
+				$('#txt-table-num').hide();				
+			 }
+			else
+				$('#txt-table-num').show();
+				
+		});	
+
+	    $('#txt-table-num').keyup(function(){
+			$('#menu-type').val("New");	
+			storage("close","no");
+			sessionStorage.comOrder = "";
+		});	
+  });
+    
+</script>
+</body>
+</html>
+
+

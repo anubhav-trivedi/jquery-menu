@@ -1,0 +1,236 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Restuarant app</title>
+  <meta name="description" content="">
+  <meta name="author" content="ipad-app">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/basic.css">
+  <link rel="stylesheet" href="css/toastmessage.min.css">
+  <!--[if lte IE 9]>
+  <link rel="stylesheet" href="css/ie.css">
+  <![endif]-->
+
+  <script src="js/libs/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+ </head>
+<body onload="dishes();">
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+  <div class="main-content clearfix">
+    <div class="content-inner content-inner-dishes clearfix">
+      <div class="aside-category">
+        <input type='hidden' id='filter'/>
+        <ul>
+			<li><a href="#" class="thirst" onclick="storage('filter','Thirst Quenchers');window.location.reload();"><img class="ctg" src="img/ThirstQuenchers_1.png" alt=""></a> </li>
+			<li><a href="#" class="juice" onclick="storage('filter','Juices');window.location.reload();"><img class="ctg" src="img/FreshJuice_1.png" alt=""></a></li>
+			<li><a href="#" class="tea" onclick="storage('filter','Tea Coffee');window.location.reload();"><img class="ctg" src="img/TeaCoffee_1.png" alt=""></a></li>
+			<li><a href="#" class="shakes" onclick="storage('filter','Shakes');window.location.reload();"><img class="ctg" src="img/ShakesFloat_1.png" alt=""></a></li>
+			<li><a href="#" class="soups" onclick="storage('filter','Soups and salads');window.location.reload();"><img class="ctg" src="img/SoupSalads_1.png" alt=""></a></li>
+			<li><a href="#" class="mains" onclick="storage('filter','Mains');window.location.reload();"><img class="ctg" src="img/Mains_1.png" alt=""></a></li>	  
+	  		<li><a href="#" class="burger" onclick="storage('filter','Burgers');window.location.reload();"><img class="ctg" src="img/Burgers_1.png" alt=""></a> </li>
+			<li><a href="#" class="kids" onclick="storage('filter','Kids');window.location.reload();"><img class="ctg" src="img/kidsMenu_1.png" alt=""></a></li>
+			<li><a href="#" class="desert" onclick="storage('filter','Desserts');window.location.reload();"><img class="ctg" src="img/Desserts_1.png" alt=""></a></li>
+			<li><a href="#" class="beer" onclick="storage('filter','Beer');window.location.reload();"><img class="ctg" src="img/GourmetBeers_1.png" alt=""></a></li>
+			<li><a href="#" class="wine" onclick="storage('filter','Wines');window.location.reload();"><img class="ctg" src="img/Wines_1.png" alt=""></a></li>
+			<li><a href="#" class="christmas" onclick="storage('filter','Christmas Menu');window.location.reload();"><img class="ctg" src="img/Christmas_1.png" alt=""></a></li>
+			
+	  </ul>
+      </div>
+      <div style="width:72%;padding:1px 10px 0px 15px; border:1px solid #C24926;height:850px;overflow-y:scroll;" class="table-container">
+        <table border="0" style="width:100%;" cellpadding="0" cellspacing="0" class="table table-dishes">
+          <tbody id="dishes">
+
+          </tbody>
+        </table>
+       
+      </div>
+	   <div class="btn-group pull-right">
+	    <!-- <a href="javascript:void(0);" onclick="showPrvOrder();" class="btn-red">Previous Order</a> -->
+          <a href="javascript:void(0);" onclick="window.location.href='bill.html' "><img src="img/continue.png" /></a>
+        </div>
+     </div>
+  </div> <!-- #main-container -->
+ <!-- Below Code Contains PopUp Div for Table Structure -->
+ <input type="hidden" id="hdnSp" value="" />
+		<div id="basic-modal-content">
+				
+		</div>
+
+		<!-- preload the images
+		<div style='display:none'>
+			<img src='css/images/x.png' alt='' />
+		</div>
+ -->
+<script src="js/libs/jquery-1.10.1.min.js"></script>
+<script src="js/libs/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="js/libs/jquery.retina.min.js"></script>
+<script type="text/javascript" src="js/datastorage.js"></script>
+<script type="text/javascript" src="js/dishes.js"></script>
+<script type="text/javascript" src="js/special.js"></script>
+<script type="text/javascript" src="js/libs/jquery.simplemodal.js"></script>
+<script type="text/javascript" src="js/toastmessage.min.js"></script>
+<script type="text/javascript">
+    
+$( document ).ready(function() {
+
+if(getCookie('clicked') != null && getCookie('clicked') != 'undefined' && getCookie('clicked') != "" &&  getCookie('clicked') != '')
+{
+	var clicked = getCookie('clicked');
+    var src = $('.'+ clicked +' img').attr('src');
+	var splitsrc = src.split("_");
+	var newsrc = splitsrc[0]+"_2.png";
+    $('.'+ clicked +' img').attr('src',newsrc);	
+}
+
+
+var prev = "";
+
+var menutype = jQuery.parseJSON(getCookie('order')).menu;
+
+if(menutype == "Weekend Brunch"){
+var dishes = eval(dishesJSON); 
+
+}
+else if (menutype == "Normal")
+{
+var dishes = eval(dishesJSON1);
+
+}
+else
+{
+var dishes = eval(dishesJSON); 
+
+}
+
+      for(i = 0; i < dishes.length; i++){
+        var dish = dishes[i];
+        var filter = getCookie('filter');
+        if(filter=='' || dish.category==filter){
+		var curr = dish.subcateg;
+		if(prev != curr)
+		{
+		var row1 = "<tr><td colspan='4' style='font-size:1.5em;color:#FFFFFF;background-color:#de7557;text-align:center'>"+dish.subcateg+"</td></tr>";
+		$('#dishes').append(row1);
+		prev = curr;
+		}
+		
+		var dishname = escape(dish.name);
+		var dishdesc = escape(dish.desc);
+		
+		var row = "<tr><td style='width:15%'><a href='javascript:void(0);' onclick=\"showDesc('"+ dishname + "','" + dishdesc + "','" + dish.logo + "','" + dish.price + "','" + dish.id + "','" + dish.category + "','" + dish.special + "');\"><img style='border:0px' src= '" + dish.logo + "'></a></td><td style='width:60%;text-align:center;'><input type='hidden' class='categ' value='"+dish.category+"' /><a href='javascript:void(0);' onclick=\"showDesc('" + dishname + "','" + dishdesc + "','" + dish.logo + "','" + dish.price + "','" + dish.id + "','" + dish.category + "','" + dish.special + "');\"><h3 style='font-size:1.2em;color:#000000'>" + dish.name + "</h3></a><p>" + dish.desc + "</p style='font-size:1.1em'></td><td style='width:25%'><div class='qty-sizes'><span style='float:left;width:60px;'>" + dish.price + "</span><a style='float:right' href='javascript:void(0);' class='addcart"+dish.special+"' id='" + dish.id + "'><img src='img/plus.png'></a></div></td><td style='width:10%'><span style='border-radius:5px 5px 5px 5px;background-color:#480000;color:#ffffff;padding-right:15px;padding-bottom:8px;padding-top:8px;padding-left:15px;margin-top:5px;' id='sp_"+ dish.id +"'>0</span></td></tr>";
+				$('#dishes').append(row);
+				var myorder = jQuery.parseJSON(getCookie('order'));
+		var cart_obj = myorder.cart;
+		 for(j = 0; j < cart_obj.length;j++){
+          var item = cart_obj[j];
+		   if(item){
+				
+				if(item.item_id == dish.id){
+					 $('#sp_'+item.item_id).html(item.qty); 
+				}	
+			}				
+		  }
+		}
+	  }
+	   
+	  // Below code will execute if their are some special instruction to be added in item	  
+		 $(".addcart1").bind('click touchstart',function(e){
+			$('#basic-modal-content').html('');
+			var price = parseFloat($(e.currentTarget).parents('div.qty-sizes').find('span').html());
+			var id = $(e.currentTarget).attr('id');
+			var name =  $(e.currentTarget).parents('tr').find('td:eq(1) h3').html();
+			var desc = $(e.currentTarget).parents('tr').find('td:eq(1) p').html();
+			var category = $(e.currentTarget).parents('tr').find('td:eq(1) .categ').val();
+			var imgsrc = $(e.currentTarget).parents('tr').find('td:eq(0) img').attr('src');
+			var store = name+";$"+desc+";$"+imgsrc+";$"+price+";$"+id+";$"+category;
+            storage("mystore",store);
+			var instr = eval(spJson); 
+			for(var k = 0; k < instr.length; k++)
+			{			   
+				if($(this).attr('id') == instr[k].id)
+				{
+					$('#hdnSp').val(k);
+					$('#basic-modal-content').append(window[instr[k].specialinstruction]);
+				    $('#basic-modal-content').modal();
+				}
+			}
+	   
+		 });			
+	//**************************************************************	   
+      $(".addcart0").bind('click touchstart',function(e){
+       var myorder = jQuery.parseJSON(getCookie('order'));	   
+       var price = parseFloat($(e.currentTarget).parents('div.qty-sizes').find('span').html());
+       var unit_price= price;
+       var id = $(e.currentTarget).attr('id');
+       var qty = 1;
+       var name =  $(e.currentTarget).parents('tr').find('td:eq(1) h3').html();
+       var desc = $(e.currentTarget).parents('tr').find('td:eq(1) p').html();
+	   var category = $(e.currentTarget).parents('tr').find('td:eq(1) .categ').val();
+       var imgsrc = $(e.currentTarget).parents('tr').find('td:eq(0) img').attr('src');
+       var cart_obj = myorder.cart;
+       var new_cart = new Array();
+       var item = null;
+       var itemFound = false;
+       for(i = 0; i < cart_obj.length;i++){
+          var item = cart_obj[i];
+		
+          if(item){
+		 
+            if(item.item_id == id){			 
+              item.qty++;
+			  $('#sp_'+item.item_id).html(item.qty); 			  
+              itemFound = true;
+             // item.desc = item.desc;
+              item.name = item.name;
+			  item.category = item.category;
+			  item.unit_price = item.unit_price;
+			  item.price = item.qty * item.unit_price;			 
+            }			
+          }
+       }
+	   
+       if(!itemFound){
+        item = {
+              item_id:id,
+              name: name,
+              qty: 1,
+              //desc: desc,
+              img: imgsrc,
+			  category: category,
+              unit_price: unit_price,
+              price: price,
+			  special:0			  
+            }
+            cart_obj.push(item);
+			 $('#sp_'+item.item_id).html(item.qty); 
+       }
+
+      storage("order",JSON.stringify(myorder));
+	 //alert(getCookie('order'));
+    });
+	    
+		$('.ctg').click(function()
+		{
+		   storage("clicked",$(this).parents('a').attr('class'));		
+		});
+
+});
+
+</script>
+
+</body>
+</html>
+
+

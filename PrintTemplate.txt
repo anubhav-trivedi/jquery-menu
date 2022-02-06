@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<table>
+<pgwidth>47</pgwidth>
+	<tr w="30"><![CDATA[[[OutletName]]]]></tr>
+<tr>[[Printer]]</tr>
+	<tr>LF</tr>
+	<tr>-----------------------------------------------</tr>
+	<tr>LF</tr>
+	<tr>LF</tr>
+	<tr w="30">Table No: [[Table]]</tr>
+	<tr>No of Guests: [[PAX]]</tr>
+	<tr>LF</tr>
+	<tr w="30"><![CDATA[Server Name: [[Server]]]]></tr>
+	<tr>Order No: [[OrderNo]]</tr>
+	<tr>LF</tr>
+	<tr w="30">Type: [[Freq]]</tr>
+	<tr>Date: [[Date]]</tr>
+	<tr>LF</tr>
+	<tr w="30">SPACE</tr>
+	<tr>Time: [[Time]]</tr>
+	<tr>LF</tr>
+	<tr>-----------------------------------------------</tr>
+	<tr>LF</tr>
+	<tr w="10">Qty</tr>
+	<tr>Item</tr>
+	<tr>LF</tr>
+	<tr>-----------------------------------------------</tr>
+	<tr>LF</tr>
+	<menu>
+		 <tr w="10">[[Qty]]</tr>
+		 <tr size="35"><![CDATA[[[Item]]]]></tr>
+		 <tr>LF</tr>
+		 <sub>
+			<tr w="13">SPACE</tr>
+			<tr size="30"><![CDATA[[[SubItem]]]]></tr>
+			<tr>LF</tr>		  
+		 </sub>
+		 <sep><tr>-----------------------X-----------------------</tr></sep>
+	</menu>
+	<footer>
+		<tr>LF</tr>
+		<tr><![CDATA[Request: [[Note]]]]></tr>
+	</footer>
+</table>

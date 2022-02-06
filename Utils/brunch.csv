@@ -1,0 +1,128 @@
+logo,name,desc,basket,price,id,category,subcateg,special
+img/food.jpg,Pink Grapefruit ,flavoured sparkling ,img/basket_add.png,5.5,6,Thirst Quenchers,Thirst Quenchers,0
+img/food.jpg,Santa Vittoria - Sparkling <br>(250 ml),natural spring water from Iceland - still water,img/basket_add.png,4.5,7,Thirst Quenchers,Thirst Quenchers,0
+img/food.jpg,Santa Vittoria - Sparkling <br>(750 ml),natural spring water from Iceland - still water,img/basket_add.png,9.9,8,Thirst Quenchers,Thirst Quenchers,0
+img/food.jpg,Coke,,img/basket_add.png,3.8,9,Thirst Quenchers,Thirst Quenchers,0
+img/food.jpg,Sprite,,img/basket_add.png,3.8,10,Thirst Quenchers,Thirst Quenchers,0
+img/food.jpg,Coke Light,,img/basket_add.png,3.8,11,Thirst Quenchers,Thirst Quenchers,0
+img/food.jpg,Bundaberg Rootbeer,,img/basket_add.png,4.5,12,Thirst Quenchers,Thirst Quenchers,0
+img/food.jpg,Blood Orange Soda   ,,img/basket_add.png,4,14,Thirst Quenchers,Thirst Quenchers,0
+img/food.jpg,Limonata,,img/basket_add.png,4,15,Thirst Quenchers,Thirst Quenchers,0
+img/food.jpg,Mandarin Soda,,img/basket_add.png,4,16,Thirst Quenchers,Thirst Quenchers,0
+img/food.jpg,Homemade Iced Lemon Tea,,img/basket_add.png,4.8,17,Thirst Quenchers,Thirst Quenchers,0
+img/food.jpg,Icelandic Glacial (330 ml),,img/basket_add.png,5,18,Thirst Quenchers,Thirst Quenchers,0
+img/food.jpg,Icelandic Glacial (1000 ml),,img/basket_add.png,12,19,Thirst Quenchers,Thirst Quenchers,0
+img/food.jpg,Coconut Drink,,img/basket_add.png,6,216,Thirst Quenchers,Thirst Quenchers,0
+img/food.jpg,Open Drink,,img/basket_add.png,1,218,Thirst Quenchers,Thirst Quenchers,1
+img/food.jpg,Green Apple Juice,,img/basket_add.png,6.3,21,Juices,Fresh Juices,1
+img/food.jpg,Orange Juice,,img/basket_add.png,6.3,22,Juices,Fresh Juices,1
+img/food.jpg,Calamanci with Mint Leaves,,img/basket_add.png,6.3,23,Juices,Fresh Juices,1
+img/food.jpg,Special Juice,,img/basket_add.png,7.3,24,Juices,Fresh Juices,1
+img/food.jpg,Kids Green Apple Juice,,img/basket_add.png,4,236,Juices,Fresh Juices,1
+img/food.jpg,Kids Orange Juice,,img/basket_add.png,4,237,Juices,Fresh Juices,1
+img/food.jpg,Kids Calamanci with Mint Leaves,,img/basket_add.png,4,238,Juices,Fresh Juices,1
+img/food.jpg,Kids Special Juice,,img/basket_add.png,4,239,Juices,Fresh Juices,1
+img/food.jpg,Chocolate Cointreau,,img/basket_add.png,12,25,Shakes,Shakes/Cocktails,0
+img/food.jpg,Fresh Strawberry,,img/basket_add.png,9.8,26,Shakes,Shakes/Cocktails,0
+img/food.jpg,Tiramisu with Marsala Wine,,img/basket_add.png,10.9,27,Shakes,Shakes/Cocktails,0
+img/food.jpg,Coconut with Gula Melaka,,img/basket_add.png,9.5,28,Shakes,Shakes/Cocktails,0
+img/food.jpg,Chocolate Shake,,img/basket_add.png,7.5,219,Shakes,Shakes/Cocktails,0
+img/food.jpg,Vanilla Shake,,img/basket_add.png,7.5,220,Shakes,Shakes/Cocktails,0
+img/food.jpg,Kids Strawberry Shake,,img/basket_add.png,5.5,221,Shakes,Shakes/Cocktails,0
+img/food.jpg,Kids Vanilla Shake,,img/basket_add.png,5.5,222,Shakes,Shakes/Cocktails,0
+img/food.jpg,Kids Chocolate Shake,,img/basket_add.png,5.5,223,Shakes,Shakes/Cocktails,0
+img/food.jpg,Rootbeer Float,,img/basket_add.png,8.9,29,Shakes,Shakes/Cocktails,0
+img/food.jpg,relish Mojito,"havana, lime, calamansi, brown sugar, gula melaka, mint leaves",img/basket_add.png,12.5,2,Shakes,Shakes/Cocktails,0
+img/food.jpg,Dirty &quot;Spicy&quot; Bloody Mary,,img/basket_add.png,12.5,3,Shakes,Shakes/Cocktails,0
+img/food.jpg,White Sangria,,img/basket_add.png,12.5,4,Shakes,Shakes/Cocktails,0
+img/food.jpg,Red Sangria,,img/basket_add.png,12.5,5,Shakes,Shakes/Cocktails,0
+img/food.jpg,Mango Mojito,,img/basket_add.png,13,202,Shakes,Shakes/Cocktails,0
+img/food.jpg,Gourmet Dark Chocolate Soft Serve ,,img/basket_add.png,3.4,61,Shakes,Shakes/Cocktails,1
+img/food.jpg,Coconut Milk Shake,,img/basket_add.png,9.5,245,Shakes,Shakes/Cocktails,0
+img/food.jpg,Kids Coconut Milk Shake,,img/basket_add.png,5,246,Shakes,Shakes/Cocktails,0
+img/food.jpg,Kids Cheeseburger ,"cabbage, tomato & fries",img/basket_add.png,14.8,30,Kids,Kids&apos; Menu,1
+img/food.jpg,Kids Spaghetti Beef Bolognese,,img/basket_add.png,13.5,31,Kids,Kids&apos; Menu,1
+img/food.jpg,Kids Mini Crispy Chicken Fillets ,baked beans & fries,img/basket_add.png,13.8,32,Kids,Kids&apos; Menu,1
+img/food.jpg,Kids Mini Crispy Fish Fillets,baked beans & fries,img/basket_add.png,13.8,33,Kids,Kids&apos; Menu,1
+img/food.jpg,Kids Special Pasta,,img/basket_add.png,13.9,228,Kids,Kids&apos; Menu,0
+img/food.jpg,Angel Hair &quot;bird nest&quot;,"herbed snail sausage, sunny side up, crisp angel hair, parmesan cheese",img/basket_add.png,19.9,34,Mains,"Mains, Pastas & Sharing",1
+img/food.jpg,relish Breakfast Platter,"toasted muffin, snail pork sausage, scramble eggs, mushrooms, smoked salmon",img/basket_add.png,20.8,35,Mains,"Mains, Pastas & Sharing",1
+img/food.jpg,Open Striploin Steak Sandwich,"minute steak, truffle aioli, caramelized onions, baby spinach, fries",img/basket_add.png,20.8,36,Mains,"Mains, Pastas & Sharing",1
+img/food.jpg,Rosemary Smoked Salmon Bagel,"scallion cream cheese, smoked salmon, scrambled eggs, saut&eacute; potatoes",img/basket_add.png,20.8,37,Mains,"Mains, Pastas & Sharing",1
+img/food.jpg,Eggs Wild Benedict,"wild rocket, toasted muffin, poached eggs, bacon & hollandaise",img/basket_add.png,20.8,38,Mains,"Mains, Pastas & Sharing",1
+img/food.jpg,Spicy Corned Beef Spaghettini ,wild rocket&apos;s favourite brunch pasta,img/basket_add.png,17.9,39,Mains,"Mains, Pastas & Sharing",1
+img/food.jpg,Spicy Bolognaise Bee Tai Bak,"local rice pasta, beef bolognaise, special chili padi flakes & shallot oil",img/basket_add.png,17.8,40,Mains,"Mains, Pastas & Sharing",1
+img/food.jpg,Linguine with Shredded Crabmeat,"tossed with garlic, olive oil & chili",img/basket_add.png,18.8,41,Mains,"Mains, Pastas & Sharing",1
+img/food.jpg,Aubergine Lasagna,an Italian favourite of eggplant parmigiana with a local twist of Thai basil,img/basket_add.png,17,42,Mains,"Mains, Pastas & Sharing",1
+img/food.jpg,Lester&apos;s Mess with Poached Egg,"spicy chorizo sausage, saut&eacute; potatoes, sweet onions & lemon",img/basket_add.png,15.9,43,Mains,"Mains, Pastas & Sharing",1
+img/food.jpg,Adult Bolognese,,img/basket_add.png,16,211,Mains,"Mains, Pastas & Sharing",1
+img/food.jpg,Open Food,,img/basket_add.png,1,227,Mains,"Mains, Pastas & Sharing",1
+img/food.jpg,The Breakfast Burger,"  home-made apple & pork patty, cheese, omelette, baked beans, mushrooms",img/basket_add.png,20.8,44,Burgers,Burgers,1
+img/food.jpg,Bacon & Cheese Beef Burger,"crispy streaky bacon, cabbage, tomato relish, cheese",img/basket_add.png,19.9,45,Burgers,Burgers,1
+img/food.jpg,Blue Cheese & William Pear Beef Burger,"walnut-peanut butter, bleu auvergne, rocket & poached pear  ",img/basket_add.png,21.9,46,Burgers,Burgers,1
+img/food.jpg,Wild Rocket Beef Burger,"arugula, sarawak pepper cream, sun-dried tomato relish",img/basket_add.png,18.5,47,Burgers,Burgers,1
+img/food.jpg,BBQ Char Siew Pork Open Burger ,"char siew soft-bone pork, secret char siew sauce, homemade foccacia",img/basket_add.png,20.9,48,Burgers,Burgers,1
+img/food.jpg,Ram-Lee Beef Burger,"wrapped in an omelete, cheese, red onion, sweet chili sauce & mayonnaise",img/basket_add.png,21.9,49,Burgers,Burgers,1
+img/food.jpg,Chicken Nasi Lemak with Anchovy Sambal Burger,"coconut rice,turmeric chicken thigh, japanese cucumber ribbons, peanut, egg",img/basket_add.png,18.9,226,Burgers,Burgers,1
+img/food.jpg,Thai Basil Prata Pizza,a Thai favourite of saut&eacute; basil minced pork with mozzarella on roti prata crust,img/basket_add.png,11.9,50,Soups and salads,"Soup, Salads & Sharing",1
+img/food.jpg,BRT Prata Pizza,"arugula, tomato, bacon, mozzarella on a roti prata crust",img/basket_add.png,11.9,51,Soups and salads,"Soup, Salads & Sharing",1
+img/food.jpg,Thick French Toast ,"roasted apple, cinnamon apple syrup, maple walnut ice-cream",img/basket_add.png,12.8,52,Soups and salads,"Soup, Salads & Sharing",1
+img/food.jpg,Buttermilk Pancake Stack ,"cream cheese, assorted berries sauce& vanilla ice-cream",img/basket_add.png,15.8,53,Soups and salads,"Soup, Salads & Sharing",1
+img/food.jpg,Home-Styled Mushroom Cream Soup,"swiss button & shiitake, drizzled with truffle oil",img/basket_add.png,9.9,54,Soups and salads,"Soup, Salads & Sharing",1
+img/food.jpg,Classic Caesar Salad (s),"secret anchovy dressing, parmesan, baby cos lettuce, croutons, egg, bacon",img/basket_add.png,12.5,55,Soups and salads,"Soup, Salads & Sharing",1
+img/food.jpg,Caesar Salad (Main),,img/basket_add.png,15.8,56,Soups and salads,"Soup, Salads & Sharing",1
+img/food.jpg,Sesame Shredded Chicken Salad,"light soy sauce, sesame oil, baby spinach and mesclun",img/basket_add.png,13.8,57,Soups and salads,"Soup, Salads & Sharing",1
+img/food.jpg,Fries,,img/basket_add.png,6.5,210,Soups and salads,"Soup, Salads & Sharing",1
+img/food.jpg,Truffle Fries,,img/basket_add.png,9.5,225,Soups and salads,"Soup, Salads & Sharing",1
+img/food.jpg,Onion Rings,,img/basket_add.png,9.8,244,Soups and salads,"Soup, Salads & Sharing",1
+img/food.jpg,Masculine Salad,,img/basket_add.png,10,249,Soups and salads,"Soup, Salads & Sharing",1
+img/food.jpg,Focaccia Bread,,img/basket_add.png,1.5,253,Soups and salads,"Soup, Salads & Sharing",1
+img/food.jpg,Parmesan Wings (half a dozen),gorgonzola dip & our chicken rice-style chili dip,img/basket_add.png,10.9,254,Soups and salads,"Soup, Salads & Sharing",1
+img/food.jpg,Strawberry Cheesecake ,wild rocket&apos;s signature dessert,img/basket_add.png,9.8,58,Desserts,Desserts,1
+img/food.jpg,Dark Lava Chocolate Gateau,flamb&eacute; banana &vanilla ice cream,img/basket_add.png,13.5,59,Desserts,Desserts,1
+img/food.jpg,Panna Cotta,"pandan-infused panna cotta, gula melaka ",img/basket_add.png,9,60,Desserts,Desserts,1
+img/food.jpg,Dark Chocolate and Peanut Butter Fudge Cake with Vanilla Ice-Cream,,img/basket_add.png,9.2,62,Desserts,Desserts,1
+img/food.jpg,Milo and Horlicks Marble Cake with Vanilla Ice-Cream,,img/basket_add.png,9.2,63,Desserts,Desserts,1
+img/food.jpg,Carrot Chrysanthemum Cake with Vanilla Ice-Cream,,img/basket_add.png,8.5,64,Desserts,Desserts,1
+img/food.jpg,Mix berries butter cake with ice-cream,,img/basket_add.png,8.8,255,Desserts,Desserts,1
+img/food.jpg,Blanche Titje,"A fresh and inviting flavour.Beautiful and constant head.A cloudy appearance. The nose is more variegated and fresh than the taste. A light spicy note, contains Orange peel as well as coriander to give it its thirst quenching properties.",img/basket_add.png,13.8,65,Beer,Gourmet Beers,0
+img/food.jpg,Erdinger,"Medium gold colour, with lots of swirling yeast haze in the glass. The nose is really quite clean, crisp and citrussy, with a little hint of yeastiness and grass, but rather neutral overall. On the palate the texture is creamy and dense, and this is a very smooth, sleek, tasty beer that is nevertheles a touch non-descript. ",img/basket_add.png,16,66,Beer,Gourmet Beers,0
+img/food.jpg,Lychee Beer ,"Pale gold colour with strong notes of lychee on the nose.Beautifully perfumed with fresh lychee.Sweet but not overly cloying.Fantastic drink with strong appeal for cocktail drinkers.Beer for any day, any time. Great with desserts & friends&hellip;",img/basket_add.png,13,67,Beer,Gourmet Beers,0
+img/food.jpg,Heineken,Moderate maltiness with a hint of European hop character and a whiff of what one beer writer calls ,img/basket_add.png,11,68,Beer,Gourmet Beers,0
+img/food.jpg,Honeydew Melon Beer ,"Hints of ripe honeydew on the nose, with flavours bursting on your palate with every sip. Great drink for a hot & sunny Singapore!",img/basket_add.png,13,69,Beer,Gourmet Beers,0
+img/food.jpg,Pauwel Kwak,"Possesses a deep bright amber color and dense creamy head.Fruity and malty aroma with a slightly spicy character and perhaps also a whiff of pineapple or mango in the background. On the palate it has a very mellow fruity attack, a nougat like solidity.",img/basket_add.png,16,70,Beer,Gourmet Beers,0
+img/food.jpg,Saison Silly,Saison ales are traditionally brewed in winter to be consumed in the summer months. Pours a brilliant amber with a very slight haze and a thick white head. Nose held an intense fresh strawberry jam of esters. Fairly thin and sweet in the mouth.A very drinkable beer.,img/basket_add.png,13.8,71,Beer,Gourmet Beers,0
+img/food.jpg,Konig Ludwig,"Pours a hazy straw color forming a very fluffy large head. The aroma features cloves, citrus, bananas and yeast. The taste is exceptionally creamy and smooth with a dry finish. Nice and crisp on the tongue.",img/basket_add.png,13.8,72,Beer,Gourmet Beers,0
+img/food.jpg,Zlata Praha,,img/basket_add.png,16,203,Beer,Gourmet Beers,0
+img/food.jpg,Obolon White,,img/basket_add.png,16,204,Beer,Gourmet Beers,0
+img/food.jpg,Tripel Karmeliet,"Very refined and complex golden to bronze brew with a fantastic creamy head. It is refine and complex with hints of vanilla mixed with citrus fruits on the nose. Tastes of fresh wheat, but also encompasses the creaminess of oats, together with spicy lemony dryness.",img/basket_add.png,16.8,73,Beer,Gourmet Beers,0
+img/food.jpg,Pierre Jean Colombard Chardonnay - Glass,"southernfrance, 2011 - this wine has aromas of ripe apple and pears contributing a hint of tropical fruit. mineral and slightly herbaceous notes can also be detected. fresh uncomplicated fruit fill the palate with a tangy, citrusy crisp finish and lively acidity.",img/basket_add.png,10.8,74,Wines,White Wines,0
+img/food.jpg,Pierre Jean Colombard Chardonnay - Bottle,"southernfrance, 2011 - this wine has aromas of ripe apple and pears contributing a hint of tropical fruit. mineral and slightly herbaceous notes can also be detected. fresh uncomplicated fruit fill the palate with a tangy, citrusy crisp finish and lively acidity.",img/basket_add.png,45.8,75,Wines,White Wines,0
+img/food.jpg,Frankland Rocky Gully Riesling,"frankland river, western australia, 2010 - light in texture but dense with character, offering mineral-tingled apple and quince flavour that remains well modulated through the long, refined finish. ",img/basket_add.png,67.5,76,Wines,White Wines,0
+img/food.jpg,Santa Rita Medalla Real Chardonnay,"casablancavalley,chile, 2007 - Yellow-green colour with medium-bodied with tones of tropical fruits, hazelnut and notes of honey.a tasteful wine with good acidity, complex structure, sweetness and persistence.",img/basket_add.png,67.5,77,Wines,White Wines,0
+img/food.jpg,Morton Estate White Label Sauvignon Blanc,"marlborough, new zealand,2011 - Ripe, lifted peaches, limes and a fuller bodied palate. An excellent example of a marlborough Sauvignon Blanc.",img/basket_add.png,75,78,Wines,White Wines,0
+img/food.jpg,De Bortoli Family selection Shiraz Cabernet - Glass,"bilbul vineyards, australia, 2010/11 - vibrant purple in colour with crimson hues with lifted plum and berry aromas. on the palate, it has an intense plum and spice characters with rounded fresh fruit flavours, soft tannins and light toasty oak.",img/basket_add.png,12.8,79,Wines,Red Wines,0
+img/food.jpg,De Bortoli Family selection Shiraz Cabernet - Bottle,"bilbul vineyards, australia, 2010/11 - vibrant purple in colour with crimson hues with lifted plum and berry aromas. on the palate, it has an intense plum and spice characters with rounded fresh fruit flavours, soft tannins and light toasty oak.",img/basket_add.png,52.8,80,Wines,Red Wines,0
+img/food.jpg,Mitolo Jester Shiraz,"mclarenvale,australia, 2007/08 - Bright ruby, dense, rather backward aromas of cassis, bitter cherry and black pepper, with hints of anise and clove.  Flavours of sweet, dark berries, tobacco and roasted coffee with long finish.",img/basket_add.png,76.5,81,Wines,Red Wines,0
+img/food.jpg,De Bortoli Windy Peak Pinot Noir,"victoria, Australia, 2009/10 - medium red in colour with purple hue coupled with a complex cherry-like pinot fruit aroma. the palate shows good concentration with strong strawberry/spice flavours and hints of maceration.",img/basket_add.png,72.5,82,Wines,Red Wines,0
+img/food.jpg,Montes Classic Merlot,"colchagua valley, chile,2009/10 - tasty, with briary tannins carrying good black cherry and blackberry fruit notes. shows a touch of toast on the finish.",img/basket_add.png,48.5,83,Wines,Red Wines,0
+img/food.jpg,Tasca D&apos;Almerita Regaliali Nero D&apos;Avola,"sicilia, italy, 2009 - bright, intense ruby red, cherry, mulberry, sour black cherry, blueberry, vanilla, sage. pleasantlyvelvety and well balanced tannins.",img/basket_add.png,75,84,Wines,Red Wines,0
+img/food.jpg,ToressellaProsecco Brut,"valdobbiadene, italy, nv - A semi-sparkling wine with a distinctive varietal style: its bouquet displays the grape&apos;s characteristic aromatic note and the palate is fresh and appealing.",img/basket_add.png,64,85,Wines,Sparkling,0
+img/food.jpg,Fresh Brew,,img/basket_add.png,4,88,Tea Coffee,Vittoria Coffee,1
+img/food.jpg,Espresso,,img/basket_add.png,4,89,Tea Coffee,Vittoria Coffee,1
+img/food.jpg,Macchiato,,img/basket_add.png,4,90,Tea Coffee,Vittoria Coffee,1
+img/food.jpg,Cappuccino,,img/basket_add.png,4.8,91,Tea Coffee,Vittoria Coffee,1
+img/food.jpg,Latte,,img/basket_add.png,4.8,92,Tea Coffee,Vittoria Coffee,1
+img/food.jpg,Flat White,,img/basket_add.png,4.5,208,Tea Coffee,Vittoria Coffee,1
+img/food.jpg,Long Black,,img/basket_add.png,4,209,Tea Coffee,Vittoria Coffee,1
+img/food.jpg,Mocha,,img/basket_add.png,4.8,94,Tea Coffee,Vittoria Coffee,1
+img/food.jpg,British Breakfast,,img/basket_add.png,4.5,95,Tea Coffee,GryphonTea,1
+img/food.jpg,Earl Grey,,img/basket_add.png,4.5,96,Tea Coffee,GryphonTea,1
+img/food.jpg,Chamomile Dream,,img/basket_add.png,4.8,97,Tea Coffee,GryphonTea,1
+img/food.jpg,Lemon Ginger Mint,,img/basket_add.png,4.8,98,Tea Coffee,GryphonTea,1
+img/food.jpg,Pearl of the Orient,,img/basket_add.png,4.5,99,Tea Coffee,GryphonTea,1
+img/food.jpg,Hot Chocolate,,img/basket_add.png,4.5,234,Tea Coffee,GryphonTea,0
+img/food.jpg,Green Tea,,img/basket_add.png,4.5,251,Tea Coffee,GryphonTea,1
+img/food.jpg,Pumpkin Soup With Bacon & Crouton,,img/basket_add.png,9.9,257,Christmas Menu,Christmas Menu,1
+img/food.jpg,Tangy Turkey Burger Spicy BBQ Cranberry Sauce,,img/basket_add.png,20.8,258,Christmas Menu,Christmas Menu,1
+img/food.jpg,Sticky Date Pudding With Salted Caramel Sauce & Milk,,img/basket_add.png,13,259,Christmas Menu,Christmas Menu,1

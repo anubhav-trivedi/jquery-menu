@@ -1,0 +1,18 @@
+orders = [
+{
+  "synced":false
+  "created":"",
+  "table":"",
+  "n_guests":2,
+  "waiter":"Ryan",
+  "menu":"lunch",
+  "pref":{"veg":true, "alcohol":false,"spicey":false},
+  "customer_info":{},
+  "cart":[
+          {"item_id":22,"qty":1,"unit_price":50,"price":50},
+          {"item_id":21,"qty":2,"unit_price":35,"price":70}
+          ],
+  "total_amount":120,
+  "special_request":"I want everything to be steamy hot"
+}
+]

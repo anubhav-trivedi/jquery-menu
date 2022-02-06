@@ -1,0 +1,38 @@
+cart = [
+  {
+    logo            : 'img/food.jpg',
+    name            : 'Pasta Butter Fried',
+    num             : '2',
+    price           : '9.6',
+    basket_add      : 'img/basket_add.png',
+    basket_substract: 'img/basket_substract.png',
+    icon_delete     : 'img/delete.png'
+  },
+  {
+    logo            : 'img/food.jpg',
+    name            : 'Pasta Butter Fried',
+    num             : '2',
+    price           : '9.6',
+    basket_add      : 'img/basket_add.png',
+    basket_substract: 'img/basket_substract.png',
+    icon_delete     : 'img/delete.png'
+  },
+  {
+    logo            : 'img/food.jpg',
+    name            : 'Pasta Butter Fried',
+    num             : '2',
+    price           : '9.6',
+    basket_add      : 'img/basket_add.png',
+    basket_substract: 'img/basket_substract.png',
+    icon_delete     : 'img/delete.png'
+  },
+  {
+    logo            : 'img/food.jpg',
+    name            : 'Pasta Butter Fried',
+    num             : '2',
+    price           : '9.6',
+    basket_add      : 'img/basket_add.png',
+    basket_substract: 'img/basket_substract.png',
+    icon_delete     : 'img/delete.png'
+  },
+];

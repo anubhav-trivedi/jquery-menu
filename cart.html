@@ -1,0 +1,90 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Restaurant app</title>
+  <meta name="description" content="">
+  <meta name="author" content="ipad-app">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/chosen.css">
+  <!--[if lte IE 9]>
+  <link rel="stylesheet" href="css/ie.css">
+  <![endif]-->
+
+  <script src="js/libs/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+ </head>
+<body>
+
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+  <div class="main-content clearfix">
+
+    <div class="content-inner clearfix">
+      <table cellpadding="20" style="width:100%" class="table table-bill">
+        <thead>
+          <tr>
+            <th>Food Order Summary</th>
+            <th>&nbsp;</th>
+            <th class="grand_total">309</th>
+          </tr>
+        </thead>
+        <tbody data-bind="foreach: cart" id="tbody">
+<!--           <tr>
+            <td>
+              <img data-bind="attr: { src: logo }">
+              <h3  class="food-title" data-bind="text: name"></h3>
+            </td>
+            <td><span data-bind="text: num"></span>x<span data-bind="text: price"></span></td>
+            <td>
+              <a href=""><img data-bind="attr: { src: basket_add }" alt="add"></a>
+              <a href=""><img data-bind="attr: { src: basket_substract }" alt="substract"></a>
+              <a href=""><img data-bind="attr: { src: icon_delete }" alt="delete"></a>
+            </td>
+          </tr> -->
+        </tbody>
+      </table>
+
+      <div class="net-pay">
+        <p>
+          <span>Net Payable</span>
+          <span class="grand_total"></span>
+        </p>
+
+      </div>
+      <div class="btn-group pull-right">
+        <!--<input type='button' value="Place order" onclick="placeOrder();" class="btn-red" />-->
+		<a href="end.html" onclick="placeOrder();" ><img src="img/placeorder.png" /></a> <!--end.html IS USED ON THE NATIVE APP-->
+        <a href="#" onclick="window.location.href='bill.html'"  ><img src="img/cancel.png" /></a>
+      </div>
+     </div>
+  </div> <!-- #main-container -->
+	
+<input type='hidden' id='printHtml' value='' />
+<input type='hidden' id='printCtg' value='' />
+<script src="js/libs/jquery-1.10.1.min.js"></script>
+<script src="js/libs/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="js/libs/jquery.retina.min.js"></script>
+<script src="js/libs/knockout-2.2.1.js"></script>
+<script src="js/cart.json"></script>
+<script type="text/javascript" src="js/datastorage.js"></script>
+
+<script type="text/javascript">
+    // ko.applyBindings(cart);
+    renderFoodOrderSummery();
+	
+	
+</script>
+
+</body>
+</html>

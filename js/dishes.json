@@ -1,0 +1,38 @@
+[
+    {
+        "logo": "img/food.jpg",
+        "name": "Home-Styled Mushroom Cream Soup",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        "price": "699",
+        "basket": "img/basket_add.png",
+        "id": "1",
+        "category": "veg"
+    },
+    {
+        "logo": "img/food.jpg",
+        "name": "Parmesan Wings {half a dozen}",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        "price": "239",
+        "basket": "img/basket_add.png",
+        "id": "2",
+        "category": "nonveg"
+    },
+    {
+        "logo": "img/food.jpg",
+        "name": "Hand-Cut Onion Rings with Curry Mayo",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        "price": "239",
+        "basket": "img/basket_add.png",
+        "id": "3",
+        "category": "veg"
+    },
+    {
+        "logo": "img/food.jpg",
+        "name": "Spam Fries with Kaffir Lime Mayo",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        "price": "239",
+        "basket": "img/basket_add.png",
+        "id": "4",
+        "category": "nonveg"
+    }
+]
